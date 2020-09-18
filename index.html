@@ -1,26 +1,44 @@
+<!-- html es un lenguaje de marcado, no de programación -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
-    <link rel="stylesheet" href="css/style1.css"/>
-</head>
-<body>
-    <header></header>
-    <div class="textos">
-        <h1 class="titulo">HTML</h1>
-        <h2 class="subTitulo">Hyper Text Markup Language</h2>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desarrollo Frontend BIT</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Link para la carpeta de styles en CSS-->
+  </head>
 
+  <body>
+    <!-- Menú Inicio -->
+    <div>
+      <a href="index.html">Home</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="">JS</a>
+      <a href="">Bootstrap</a>
+    </div>
+    <!-- Menú Fin -->
+    <!-- Inicio Header -->
+    <header>
+      <div class="textos">
+        <h1 class="titulo">Desarrollo Frontend BIT</h1>
+        <h2 class="subTitulo">Bogotá Institute of Technology</h2>
+      </div>
+    </header>
     <!-- Fin Header -->
     <!-- Main Inicio -->
     <main>
-      <section class="queEs">
+        <!-- Acerca De -->
+      <section class="acercaDe">
         <div class="contenedor">
-          <h2 class="tituloDesarrollo">¿Qué es HTML y para qué se utilizá?</h2>
+          <h2 class="tituloDesarrollo">¿Cómo se desarrolla el Frontend?</h2>
+          <h3 class="slogan">Semana 1 de 14</h3>
           <p class="parrafos">
-            HTML es un lenguaje de marcación que sirve para definir el contenido de las páginas web. Se compone en base a etiquetas, también llamadas marcas o tags, con las cuales conseguimos expresar las partes de un documento, cabecera, cuerpo, encabezados, párrafos, etc. En definitiva, el contenido de una página web.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            repellat deserunt ipsam veniam sequi dolore magnam doloremque
+            veritatis odit officia, natus, sint soluta fugiat neque, vero fuga?
+            Esse, blanditiis nam.
           </p>
           <p class="parrafos">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
@@ -28,56 +46,83 @@
             ratione at est. At earum accusamus, explicabo quae natus voluptatum
             quod illo quos?
           </p>
+          <p class="parrafos">Acceder al curso introductorio en Youtube</p>
+          <a
+            class="boton"
+            href="https://www.youtube.com/watch?v=RTmVVLTuq4g&list=PLpD_vYWjZt12INWLq8k3at4OQiT_qg8lf"
+            target="_blank"
+            >Acceder</a
+          >
         </div>
-        <section class="galeria">
-            <div class="sesgoArriba"></div>
-            <div class="imagenes">
-              <img width="200" height="100" src="img/mm.png" alt="" />
-            </div>
-            <div class="imagenes">
-              <img width="200" height="100" src="img/htmlc.jpg" alt="" />
-            </div>
-            <div class="imagenes">
-              <img width="200" height="100" src="img/2.png" alt="" />
-            </div>
-            <div class="sesgoAbajo"></div>
-          </section>
-      <section class="ej">
-        <div>
-          <h2 class="tituloDesarrollo">Algunos ejemplos</h2>
+      </section>
+      <!-- Galeria -->
+      <section class="galeria">
+        <div class="sesgoArriba"></div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/Herramienta1.png" alt="" />
+        </div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/Herramienta2.png" alt="" />
+        </div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/LogoBIT.png" alt="" />
+        </div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/Herramienta3.png" alt="" />
+        </div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/Herramienta4.png" alt="" />
+        </div>
+        <div class="sesgoAbajo"></div>
+      </section>
+      <!-- Tarjetas -->
+      <section>
+        <div class="contenedor">
+          <h2 class="tituloDesarrollo">Primeros Pasos</h2>
+          <h3 class="slogan">Lenguajes y herramientas iniciales</h3>
           <div class="cards">
             <div class="card">
-              <h3>¿Como agregar imagenes?</h3>
-              <p class="parrafos">Para agregar una imagen utilizaremos la etiqueta img, que es una etiqueta vacia compuesta unicamente por atributos </p>
-              <p class="parrafosE">< img src="" alt="" ></p>
-              <p class="parrafos">En src se especifica el camino a la imagen y en alt colocaremos un texto de referencia para la misma.</p>
+              <img src="img/Herramienta1.png" alt="" />
+              <h4>Paso 1</h4>
+              <p class="pt">Aprender HTML</p>
             </div>
             <div class="card">
-                <h3>¿Como agregar Videos?</h3>
-                <p class="parrafos">Para videos utilizaremos</p>
-                <p class="parrafosE">< iframe src="" frameborder="0">< /iframe></p>
-                <p class="parrafos">Al igual que en el ejemplo anterior utilizaremos src para designar el link del video que deseamos utilizar.</p>                     
+              <img src="img/Herramienta2.png" alt="" />
+              <h4>Paso 2</h4>
+              <p class="pt">Aprender CSS</p>
             </div>
             <div class="card">
-                <h3>¿Como agregar Links?</h3>
-              <p class="parrafos">Un hiperviulo nos permiten navegar entre diferentes espacios de una pagina o entre diferentes paginas. En html usaremos la etiqueta</p>
-              <p class="parrafosE">< a href="">< /a></p>
-              <p class="parrafos">Donde href tendra el link de la pagina que deseamos colocar y entre las etiqutas de apertura y cierre colocaremos el texto con el que deseamos que este relacionado nuestro link</p>
-            </div>
-            <div class="card">
-                <h3>¿Como agregar una tabla?</h3>
-              <p class="parrafos">Para definir una tabla en HTML necesitaremos de los comandos </p>
-              <p class="parrafosE">< tr >"filas"< /tr > y < td >"Columnas"< /td ></p>
-              <p class="parrafos">De manera que una tabla 3x2 estara definida como </p>
-              <br>
-              <p>< tr>< td>< /td>< td>< /td>< td></p>
-              <p>< tr>< td>< /td>< td>< /td>< td></p>
-              <p>< tr>< td>< /td>< td>< /td>< td></p>
+              <img src="img/Herramienta3.png" alt="" />
+              <h4>Paso 2</h4>
+              <p class="pt">Aprender JavaScript</p>
             </div>
           </div>
         </div>
       </section>
     </main>
-<footer></footer>
+    <!-- Main Fin -->
+    <!-- Footer Inicio -->
+    <footer>
+      <div class="contenedor">
+        <h2 class="tituloInfo">Más Info</h2>
+        <h3 class="subInfo">Lo apreciariamos mucho</h3>
+        <!-- Estructura de un formulario -->
+        <div class="footer">
+          <form action="">
+            <input type="text" name="" id="" placeholder="Escribe tu nombre" />
+            <input type="email" name="" id="" placeholder="Escribe tu correo" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+            ></textarea>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Fin -->
   </body>
 </html>

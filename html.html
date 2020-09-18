@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body class="bodyH">
+    <!-- Menú Inicio -->
+    <div>
+      <a href="index.html">Home</a>
+      <a href="html.html">HTML</a>
+      <a href="css.html">CSS</a>
+      <a href="">JS</a>
+      <a href="">Bootstrap</a>
+    </div>
+    <!-- Menú Fin -->
+    <header class="hHtml"></header>
+    <!-- Titulos -->
+    <div class="textos">
+      <h1 class="titulo">HTML</h1>
+      <h2 class="subTitulo">Hyper Text Markup Language</h2>
+    </div>
+    <!-- Fin Header -->
+    <!-- Main Inicio -->
+    <main>
+      <!-- Definici[on HTML] -->
+      <section class="queEs">
+        <div class="contenedor">
+          <h2 class="tituloDesarrollo">¿Qué es HTML y para qué se utilizá?</h2>
+          <p class="parrafos">
+            HTML es un lenguaje de marcación que sirve para definir el contenido
+            de las páginas web. Se compone en base a etiquetas, también llamadas
+            marcas o tags, con las cuales conseguimos expresar las partes de un
+            documento, cabecera, cuerpo, encabezados, párrafos, etc. En
+            definitiva, el contenido de una página web.
+          </p>
+          <p class="parrafos">
+            HTML nos permite agregar texto, imagenes, videos, tablas entre otros
+            a nuestra página, pero no esta diseñado para crear un estilo o
+            modificar la apariencia, es por eso que para el modelamiento de
+            nuestras paginas es necesario recurrir a otras herramientas, una de
+            ellas es CSS.
+          </p>
+          <p>Para más informacion de CSS:</p>
+          <a class="boton" href="css.html">CSS</a>
+        </div>
+      </section>
+      <!-- Galeria -->
+      <section class="galeria">
+        <div class="sesgoArriba"></div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/mm.png" alt="" />
+        </div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/htmlc.jpg" alt="" />
+        </div>
+        <div class="imagenes">
+          <img width="200" height="100" src="img/2.png" alt="" />
+        </div>
+        <div class="sesgoAbajo"></div>
+      </section>
+      <!-- Secci[on de ejemplos] -->
+      <section class="ej">
+        <div>
+          <h2 class="tituloDesarrollo">Algunos ejemplos</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>¿Como agregar imagenes?</h3>
+              <p class="parrafos">
+                Para agregar una imagen utilizaremos la etiqueta img, que es una
+                etiqueta vacia compuesta unicamente por atributos
+              </p>
+              <p class="parrafosE">< img src="" alt="" ></p>
+              <p class="parrafos">
+                En src se especifica el camino a la imagen y en alt colocaremos
+                un texto de referencia para la misma.
+              </p>
+            </div>
+            <div class="card">
+              <h3>¿Como agregar Videos?</h3>
+              <p class="parrafos">Para videos utilizaremos</p>
+              <p class="parrafosE">
+                < iframe src="" frameborder="0">< /iframe>
+              </p>
+              <p class="parrafos">
+                Al igual que en el ejemplo anterior utilizaremos src para
+                designar el link del video que deseamos utilizar.
+              </p>
+            </div>
+            <div class="card">
+              <h3>¿Como agregar Links?</h3>
+              <p class="parrafos">
+                Un hiperviulo nos permiten navegar entre diferentes espacios de
+                una pagina o entre diferentes paginas. En html usaremos la
+                etiqueta
+              </p>
+              <p class="parrafosE">< a href="">< /a></p>
+              <p class="parrafos">
+                Donde href tendra el link de la pagina que deseamos colocar y
+                entre las etiqutas de apertura y cierre colocaremos el texto con
+                el que deseamos que este relacionado nuestro link
+              </p>
+            </div>
+            <div class="card">
+              <h3>¿Como agregar una tabla?</h3>
+              <p class="parrafos">
+                Para definir una tabla en HTML necesitaremos de los comandos
+              </p>
+              <p class="parrafosE">
+                < tr >"filas"< /tr > y < td >"Columnas"< /td >
+              </p>
+              <p class="parrafos">
+                De manera que una tabla 3x2 estara definida como
+              </p>
+              <br />
+              <p>< tr>< td>< /td>< td>< /td>< td></p>
+              <p>< tr>< td>< /td>< td>< /td>< td></p>
+              <p>< tr>< td>< /td>< td>< /td>< td></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="fHtml"></footer>
+  </body>
+</html>
